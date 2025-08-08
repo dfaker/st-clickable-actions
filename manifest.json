@@ -1,0 +1,12 @@
+{
+    "display_name": "Clickable Actions",
+    "loading_order": 1,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "depFA",
+    "version": "0.3.0",
+    "homePage": "https://github.com/dfaker/st-clickable-actions",
+    "auto_update": true
+}
