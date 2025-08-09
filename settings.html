@@ -16,20 +16,35 @@
 					>Append instructions to prompt</span
 				>
 			</label>
-			<div class="flex-container justifyspacebetween alignitemscenter">
-				<span>Instructions:</span>
+			
+			<!-- Preset Selection Section -->
+			<div class="flex-container justifyspacebetween alignitemscenter" style="margin-top: 10px;">
+				<span>Preset:</span>
+				<select id="clickable_actions_preset" class="text_pole" style="flex: 1; margin: 0 10px;">
+					<!-- Options populated dynamically -->
+				</select>
 				<div
-					title="Restore default prompt"
-					class="menu_button flex1 margin0 interactable"
-					id="clickable_actions_prompt_restore"
+					title="Load selected preset"
+					class="menu_button margin0 interactable"
+					id="clickable_actions_preset_load"
 					tabindex="0"
 				>
-					<span>Restore Default</span>
+					<span>Load Preset</span>
 				</div>
+			</div>
+			
+			<!-- Preset Description -->
+			<div id="clickable_actions_preset_description" class="clickable-actions-preset-description">
+				Select a preset to see its description
+			</div>
+			
+			<!-- Instructions Text Area -->
+			<div class="flex-container justifyspacebetween alignitemscenter">
+				<span>Instructions:</span>
 			</div>
 			<textarea
 				placeholder="Prompt"
-				rows="6"
+				rows="10"
 				class="text_pole textarea_compact"
 				id="clickable_actions_prompt"
 			></textarea>
