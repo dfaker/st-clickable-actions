@@ -13,8 +13,9 @@ Clicking the blue links added to the chat:
 
 Will cause the message the model has attached to that action to be sent immediately.
 
-The default prompt encourages the model to use both inperative style direct actions, and surprise the user by hiding actions behind objects, freely editabe in the settings:
+The default prompt encourages the model to use both inperative style direct actions, and engage the user by hiding actions naturally.
+There are a number of other presets for different styles of integration, the prompt is also freely editabe in the settings:
 
-<img width="850" height="685" alt="image" src="https://github.com/user-attachments/assets/fe38d0a4-8203-42ac-acf7-0bc6b40c2eb6" />
+<img width="861" height="396" alt="image" src="https://github.com/user-attachments/assets/d00d5f31-62fd-40b8-a486-c6c88eaf5a36" />
 
 Inspired by https://github.com/horse-armor/st-clickable-inputs for demonstrating what's possible.
