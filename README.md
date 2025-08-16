@@ -12,6 +12,6 @@ Clicking the blue links added to the chat will cause the message the model has a
 The default prompt encourages the model to use both inperative style direct actions, and engage the user by hiding actions naturally.
 There are a number of other presets for different styles of integration, the prompt is also freely editabe in the settings:
 
-<img width="861" height="396" alt="image" src="https://github.com/user-attachments/assets/d00d5f31-62fd-40b8-a486-c6c88eaf5a36" />
+<img width="863" height="459" alt="image" src="https://github.com/user-attachments/assets/af80a37c-6a8f-4bf3-a111-a56e99dea6c3" />
 
 Inspired by https://github.com/horse-armor/st-clickable-inputs for demonstrating what's possible.
