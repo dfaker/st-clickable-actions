@@ -1,53 +1,51 @@
-<!-- TODO: This needs proper i18n -->
 <div class="clickable-actions-settings">
-	<div class="inline-drawer">
-		<div class="inline-drawer-toggle inline-drawer-header">
-			<b data-i18n="Clickable actions">Clickable actions</b>
-			<div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
-		</div>
+  <div class="inline-drawer">
+    <div class="inline-drawer-toggle inline-drawer-header">
+      <b data-i18n="Clickable actions">Clickable actions</b>
+      <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+    </div>
 
-		<div class="inline-drawer-content">
-			<label class="flex-container">
-				<input type="checkbox" id="clickable_actions_enabled" /><span data-i18n="Enable">Enable</span>
-			</label>
-			<label class="flex-container">
-				<input type="checkbox" id="clickable_actions_prompt_enabled" /><span
-					data-i18n="Append instructions to prompt"
-					>Append instructions to prompt</span
-				>
-			</label>
-			
-			<!-- Preset Selection Section -->
-			<div class="flex-container justifyspacebetween alignitemscenter" style="margin-top: 10px;">
-				<span>Preset:</span>
-				<select id="clickable_actions_preset" class="text_pole" style="flex: 1; margin: 0 10px;">
-					<!-- Options populated dynamically -->
-				</select>
-				<div
-					title="Load selected preset"
-					class="menu_button margin0 interactable"
-					id="clickable_actions_preset_load"
-					tabindex="0"
-				>
-					<span>Load Preset</span>
-				</div>
-			</div>
-			
-			<!-- Preset Description -->
-			<div id="clickable_actions_preset_description" class="clickable-actions-preset-description">
-				Select a preset to see its description
-			</div>
-			
-			<!-- Instructions Text Area -->
-			<div class="flex-container justifyspacebetween alignitemscenter">
-				<span>Instructions:</span>
-			</div>
-			<textarea
-				placeholder="Prompt"
-				rows="10"
-				class="text_pole textarea_compact"
-				id="clickable_actions_prompt"
-			></textarea>
-		</div>
-	</div>
+    <div class="inline-drawer-content">
+      <label class="flex-container">
+        <input type="checkbox" id="clickable_actions_enabled" />
+        <span data-i18n="Enable">Enable</span>
+      </label>
+
+      <label class="flex-container">
+        <input type="checkbox" id="clickable_actions_send_on_click" />
+        <span data-i18n="Send on click">Send on click</span>
+      </label>
+
+      <!-- Preset Selection & Menu -->
+      <div class="flex-container justifyspacebetween alignitemscenter" style="margin-top: 10px;">
+        <span>Preset:</span>
+        <select id="clickable_actions_preset" class="text_pole" style="flex: 1; margin: 0 10px;">
+          <!-- options injected -->
+        </select>
+
+        <i id="btn_reset_all" class="menu_button fa-solid fa-undo" title="Revert All to Defaults" tabindex="0"></i>
+        <i id="btn_export" class="menu_button fa-solid fa-file-export" title="Export" tabindex="0"></i>
+        <i id="btn_import" class="menu_button fa-solid fa-file-import" title="Import" tabindex="0"></i>
+        <i id="btn_create_preset" class="menu_button fa-solid fa-file-circle-plus interactable" title="Create a new Preset" tabindex="0"></i>
+        <i id="btn_edit_preset" class="menu_button fa-solid fa-pencil interactable" title="Edit Preset (name/desc)" tabindex="0"></i>
+        <i id="btn_delete_preset" class="menu_button fa-solid fa-trash-can interactable" title="Delete Preset" tabindex="0"></i>
+      </div>
+
+      <!-- Preset Description -->
+      <div id="clickable_actions_preset_description" class="clickable-actions-preset-description">
+        Select a preset to see its description
+      </div>
+
+      <!-- Editable Instructions Text Area -->
+      <div class="flex-container justifyspacebetween alignitemscenter">
+        <span>Instructions (preset text):</span>
+      </div>
+      <textarea
+        placeholder="Write or paste the preset instructions here…"
+        rows="12"
+        class="text_pole textarea_compact"
+        id="clickable_actions_prompt"
+      ></textarea>
+    </div>
+  </div>
 </div>

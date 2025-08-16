@@ -1,0 +1,35 @@
+/* Support both .custom-act and .act */
+.custom-act,
+.act {
+  cursor: pointer;
+  background-color: rgba(63, 81, 181, 0.08);
+  border: 2px solid #3F51B5;
+  padding: 0px 4px;
+  display: inline-block; /* needed for transforms */
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.custom-act:hover,
+.act:hover {
+  background-color: rgba(63, 81, 181, 0.18);
+  border-color: #1E3A8A;
+  animation: nudgeBounce 0.35s ease-out;
+  box-shadow: 0 3px 8px rgba(63, 81, 181, 0.3);
+}
+@keyframes nudgeBounce {
+  0%   { transform: translateY(0) scale(1); }
+  40%  { transform: translateY(-3px) scale(1.08); }
+  70%  { transform: translateY(1px) scale(0.97); }
+  100% { transform: translateY(0) scale(1); }
+}
+.clickable-actions-preset-description {
+  padding: 8px;
+  margin: 8px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-style: italic;
+  min-height: 2em;
+}
